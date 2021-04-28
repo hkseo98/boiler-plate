@@ -5,6 +5,7 @@ const { User } = require("./models/User")
 const bodyParser = require("body-parser")
 const config = require('./config/key')
 const cookieParser = require('cookie-parser')
+const { auth } = require('./middleware/auth')
 
 app.use(bodyParser.urlencoded({extended: true})) // url 분석하게 해줌
 app.use(bodyParser.json()) // json 파일을 분석하게 해줌
@@ -18,7 +19,7 @@ mongoose.connect(config.mongoURI, {
 
 app.get('/', (req, res) => res.send('Hello World!!!!'))
 
-app.post('/register', (req, res) => {
+app.post('/api/users/register', (req, res) => {
     // 회원가입 정보를 클라이언트에서 가져오면 그것들을 데이터 베이스에 넣어줌
     const user = new User(req.body) // bodyparser가 있기에 req.body로 모든 데이터가 넘어올 수 있는 것.
     user.save((err, userInfo) => {
@@ -27,7 +28,7 @@ app.post('/register', (req, res) => {
     }) // 
 })
 
-app.post('/login', (req, res) => {
+app.post('/api/users/login', (req, res) => {
     // 요청한 이메일을 데이터베이스에서 찾음
     User.findOne({ email: req.body.email }, (err, userInfo) => { // 해당 이메일이 db에 없다면 userInfo는 텅 비게 됨.
         if(!userInfo) {
@@ -49,8 +50,22 @@ app.post('/login', (req, res) => {
             })
         })
     })
-   
-    
+})
+
+
+// 어떤 페이지에서든지 유저정보를 사용할 수 있음!!
+app.get('api/users/auth', auth, (req, res) => { // auth라는 미들웨어 - 미들웨어는 콜백함수 실행전에 중간에서 뭔가를 해줌.
+    // 여기까지 왔다면 인증이 되었다는 뜻.
+    res.status(200).json({
+        _id: req.user._id, // 미들웨어에서 req.user를 넘겨줌
+        isAdmin: req.user.role === 0 ? false : true,
+        isAuth: true,
+        email: req.user.email,
+        name: req.user.name,
+        lastname: req.user.lastname,
+        role: req.user.role,
+        image: req.user.image
+    })
 })
 
 app.listen(port, () => console.log(`Example app listening in port ${port}`))
