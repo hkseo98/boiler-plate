@@ -7,8 +7,11 @@ const config = require('./config/key')
 const cookieParser = require('cookie-parser')
 const { auth } = require('./middleware/auth')
 
+
 app.use(bodyParser.urlencoded({extended: true})) // url 분석하게 해줌
 app.use(bodyParser.json()) // json 파일을 분석하게 해줌
+app.use(cookieParser())
+app.use
 
 const mongoose = require("mongoose")
 mongoose.connect(config.mongoURI, {
@@ -66,6 +69,19 @@ app.get('api/users/auth', auth, (req, res) => { // auth라는 미들웨어 - 미
         role: req.user.role,
         image: req.user.image
     })
+})
+
+app.get('/api/users/logout', auth, (req, res) => {
+    User.findOneAndUpdate({ _id: req.user._id }, { token: "" }, (err, user) => {
+        if (err) return res.json({ success: false, err })
+        return res.status(200).send({
+            success: true
+        })
+    })
+})
+
+app.get('/api/hello', (req, res) => {
+    res.send("안녕하세요")
 })
 
 app.listen(port, () => console.log(`Example app listening in port ${port}`))
