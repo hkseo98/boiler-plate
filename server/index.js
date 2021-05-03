@@ -7,6 +7,7 @@ const config = require('./config/key')
 const cookieParser = require('cookie-parser')
 const { auth } = require('./middleware/auth')
 const cors = require('cors');
+const fs = require('fs');
 
 let corsOption = {
     origin: 'http://localhost:3000', // 허락하는 요청 주소
@@ -17,6 +18,7 @@ app.use(cors(corsOption));
 
 app.use(bodyParser.urlencoded({extended: true})) // url 분석하게 해줌
 app.use(bodyParser.json()) // json 파일을 분석하게 해줌
+
 app.use(cookieParser())
 
 const mongoose = require("mongoose")
@@ -53,8 +55,8 @@ app.post('/api/users/login', (req, res) => {
             userInfo.generateToken((err, user) => {
                 if (err) return res.status(400).send(err)
                 //토큰을 저장한다. 어디에? 쿠키, 로컬스토리지. 
-                res.cookie("x_auth", user.token) // cookie-parser를 통한 쿠키 저장
-                .status(200)
+                fs.writeFileSync('cookies.txt', user.token, 'utf8')
+                res.status(200)
                 .json({ loginSuccess: true, userId: user._id})
             })
         })
@@ -80,6 +82,7 @@ app.get('api/users/auth', auth, (req, res) => { // auth라는 미들웨어 - 미
 app.get('/api/users/logout', auth, (req, res) => {
     User.findOneAndUpdate({ _id: req.user._id }, { token: "" }, (err, user) => {
         if (err) return res.json({ success: false, err })
+        fs.unlinkSync('cookies.txt')
         return res.status(200).send({
             success: true
         })

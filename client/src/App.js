@@ -11,6 +11,7 @@ import LandingPage from './components/views/LandingPage/LandingPage'
 import RegisterPage from './components/views/RegisterPage/RegisterPage'
 import NavBar from './components/views/NavBar/NavBar'
 import Footer from './components/views/Footer/Footer'
+import Auth from './hoc/auth'
 
 
 function App() {
@@ -26,14 +27,16 @@ function App() {
             Login
           </Link>
         </li>
+        <li>
+          <Link to={'/register'}>
+            Register
+          </Link>
+        </li>
       </ul>
       <Switch>
-          <Route exact path="/">
-            <LandingPage/>
-          </Route>
-          <Route exact path="/login">
-            <LoginPage/>
-          </Route>
+          <Route exact path="/" component={Auth(LandingPage, null)} />
+          <Route exact path="/login" component={Auth(LoginPage, false)} />
+          <Route exact path="/register" component={Auth(RegisterPage, false)} />
         </Switch>
         </div>
       </Router>
