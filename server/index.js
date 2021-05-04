@@ -67,15 +67,7 @@ app.post('/api/users/login', (req, res) => {
 // 어떤 페이지에서든지 유저정보를 사용할 수 있음!!
 app.get('api/users/auth', auth, (req, res) => { // auth라는 미들웨어 - 미들웨어는 콜백함수 실행전에 중간에서 뭔가를 해줌.
     // 여기까지 왔다면 인증이 되었다는 뜻.
-    res.status(200).json({
-        _id: req.user._id, // 미들웨어에서 req.user를 넘겨줌
-        isAdmin: req.user.role === 0 ? false : true,
-        isAuth: true,
-        email: req.user.email,
-        name: req.user.name,
-        lastname: req.user.lastname,
-        role: req.user.role,
-        image: req.user.image
+    
     })
 })
 
