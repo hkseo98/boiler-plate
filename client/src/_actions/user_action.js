@@ -29,8 +29,7 @@ export function registerUser(dataToSubmit) {
 }
 
 export function auth() {
-    console.log("auth")
-    const request = axios.get('http://localhost:5000/api/users/auth')
+    const request = axios.get('http://localhost:5000/')
         .then(response => response.data)
 
     return {

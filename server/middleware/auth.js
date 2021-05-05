@@ -5,8 +5,11 @@ let auth = (req, res, next) => {
     // 인증 처리를 하는 곳
 
     // 토큰을 가져온다.
+    if(!fs.existsSync('cookies.txt')) {
+        return res.json({ isAuth: false })
+    }
+
     let token = fs.readFileSync('cookies.txt', 'utf8');
-    console.log(token)
 
 
     // 토큰을 복호화하여 유저를 찾는다.
