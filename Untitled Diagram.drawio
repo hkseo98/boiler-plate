@@ -1,17 +1,20 @@
-<mxfile host="app.diagrams.net" modified="2022-01-05T06:05:13.367Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="8inLUhRR31HE-T6sRZ9Z" version="16.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-05T06:19:15.227Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="FFsexRHKJLD0g4NgnAxn" version="16.0.3" type="github">
   <diagram id="M_zqmDelzy8pDt6vgbyE" name="Page-1">
-    <mxGraphModel dx="1222" dy="495" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1700" dy="815" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="EXQ4jVyw8t44hVukwaR4-107" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="270" width="790" height="760" as="geometry" />
+        </mxCell>
         <mxCell id="EXQ4jVyw8t44hVukwaR4-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="160" y="800" as="geometry" />
         </mxCell>
         <mxCell id="EXQ4jVyw8t44hVukwaR4-2" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-10" y="250" width="780" height="780" as="geometry" />
+          <mxGeometry x="-40" y="220" width="810" height="810" as="geometry" />
         </mxCell>
-        <mxCell id="EXQ4jVyw8t44hVukwaR4-3" value="&lt;font style=&quot;font-size: 26px&quot;&gt;container&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry y="260" width="120" height="30" as="geometry" />
+        <mxCell id="EXQ4jVyw8t44hVukwaR4-3" value="&lt;font style=&quot;font-size: 26px&quot;&gt;Container&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="230" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="EXQ4jVyw8t44hVukwaR4-5" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=26;" vertex="1" parent="1">
           <mxGeometry x="10" y="300" width="750" height="710" as="geometry" />
@@ -19,10 +22,10 @@
         <mxCell id="EXQ4jVyw8t44hVukwaR4-6" value="&lt;font style=&quot;font-size: 26px&quot;&gt;SizedBox&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="20" y="310" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EXQ4jVyw8t44hVukwaR4-8" value="&lt;font style=&quot;font-size: 17px&quot;&gt;width = 1320 이상이면 뷰포트 너비, 그렇지 않으면 1320&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=26;" vertex="1" parent="1">
-          <mxGeometry x="130" y="260" width="570" height="30" as="geometry" />
+        <mxCell id="EXQ4jVyw8t44hVukwaR4-8" value="&lt;font style=&quot;font-size: 17px&quot;&gt;width = 1320px 이상이면 뷰포트 너비, 그렇지 않으면 1320px&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="100" y="230" width="570" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EXQ4jVyw8t44hVukwaR4-9" value="width = 1320" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;" vertex="1" parent="1">
+        <mxCell id="EXQ4jVyw8t44hVukwaR4-9" value="width = 1320px" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;" vertex="1" parent="1">
           <mxGeometry x="150" y="310" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="EXQ4jVyw8t44hVukwaR4-10" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;" vertex="1" parent="1">
@@ -270,6 +273,9 @@
         </mxCell>
         <mxCell id="EXQ4jVyw8t44hVukwaR4-105" value="다섯 번째 줄 - 저작권 관련 표시" style="rounded=0;whiteSpace=wrap;html=1;fontSize=9;" vertex="1" parent="1">
           <mxGeometry x="320" y="890" width="190" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="EXQ4jVyw8t44hVukwaR4-109" value="&lt;span style=&quot;font-size: 26px&quot;&gt;Center&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="270" width="120" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
