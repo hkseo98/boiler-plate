@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-01-05T06:00:25.319Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="XEwwO2DR8n5ntzCsfurg" version="16.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-05T06:05:13.367Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="8inLUhRR31HE-T6sRZ9Z" version="16.0.3" type="github">
   <diagram id="M_zqmDelzy8pDt6vgbyE" name="Page-1">
-    <mxGraphModel dx="1118" dy="365" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1222" dy="495" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -140,7 +140,7 @@
           <mxGeometry x="40" y="622.5" width="190" height="35" as="geometry" />
         </mxCell>
         <mxCell id="EXQ4jVyw8t44hVukwaR4-57" value="Text" style="rounded=0;whiteSpace=wrap;html=1;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="40" y="670" width="190" height="40" as="geometry" />
+          <mxGeometry x="40" y="670" width="280" height="40" as="geometry" />
         </mxCell>
         <mxCell id="EXQ4jVyw8t44hVukwaR4-58" value="SizedBox" style="rounded=0;whiteSpace=wrap;html=1;fontSize=9;" vertex="1" parent="1">
           <mxGeometry x="40" y="720" width="190" height="35" as="geometry" />
@@ -243,6 +243,33 @@
         </mxCell>
         <mxCell id="EXQ4jVyw8t44hVukwaR4-95" value="Text" style="rounded=0;whiteSpace=wrap;html=1;fontSize=9;" vertex="1" parent="1">
           <mxGeometry x="340" y="910" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EXQ4jVyw8t44hVukwaR4-96" value="첫 번째 줄 - 로고, 이용약관, 개인정보 처리방침, 공지사항, 고객센터" style="rounded=0;whiteSpace=wrap;html=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="140" y="457.5" width="270" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="EXQ4jVyw8t44hVukwaR4-97" value="첫 번째 줄과 두 번째 줄 사이의 여백" style="rounded=0;whiteSpace=wrap;html=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="40" y="525" width="190" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="EXQ4jVyw8t44hVukwaR4-98" value="두 번째 줄 - 법인명, 대표자명, 주소&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%EC%B2%AB%20%EB%B2%88%EC%A7%B8%20%EC%A4%84%EA%B3%BC%20%EB%91%90%20%EB%B2%88%EC%A7%B8%20%EC%A4%84%20%EC%82%AC%EC%9D%B4%EC%9D%98%20%EC%97%AC%EB%B0%B1%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfontSize%3D9%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2240%22%20y%3D%22525%22%20width%3D%22190%22%20height%3D%2210%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="40" y="570" width="190" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="EXQ4jVyw8t44hVukwaR4-99" value="두 번째 줄과 세 번째 줄 사이의 여백&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%EC%B2%AB%20%EB%B2%88%EC%A7%B8%20%EC%A4%84%EA%B3%BC%20%EB%91%90%20%EB%B2%88%EC%A7%B8%20%EC%A4%84%20%EC%82%AC%EC%9D%B4%EC%9D%98%20%EC%97%AC%EB%B0%B1%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfontSize%3D9%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2240%22%20y%3D%22525%22%20width%3D%22190%22%20height%3D%2210%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="40" y="622.5" width="190" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="EXQ4jVyw8t44hVukwaR4-100" value="세 번째 줄 - 사업자 등록번호, 통신판매업, 직업정보제공사업 신고번호" style="rounded=0;whiteSpace=wrap;html=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="40" y="670" width="280" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="EXQ4jVyw8t44hVukwaR4-101" value="세 번째 줄과 네 번째 줄 사이의 여백&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%EC%B2%AB%20%EB%B2%88%EC%A7%B8%20%EC%A4%84%EA%B3%BC%20%EB%91%90%20%EB%B2%88%EC%A7%B8%20%EC%A4%84%20%EC%82%AC%EC%9D%B4%EC%9D%98%20%EC%97%AC%EB%B0%B1%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfontSize%3D9%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2240%22%20y%3D%22525%22%20width%3D%22190%22%20height%3D%2210%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="40" y="720" width="190" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="EXQ4jVyw8t44hVukwaR4-102" value="네 번째 줄 - 연락처, 이메일, sns 버튼" style="rounded=0;whiteSpace=wrap;html=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="140" y="770" width="190" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="EXQ4jVyw8t44hVukwaR4-104" value="네 번째 줄과 다섯 번째 줄 사이의 여백&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%EC%B2%AB%20%EB%B2%88%EC%A7%B8%20%EC%A4%84%EA%B3%BC%20%EB%91%90%20%EB%B2%88%EC%A7%B8%20%EC%A4%84%20%EC%82%AC%EC%9D%B4%EC%9D%98%20%EC%97%AC%EB%B0%B1%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfontSize%3D9%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2240%22%20y%3D%22525%22%20width%3D%22190%22%20height%3D%2210%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="40" y="850" width="190" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="EXQ4jVyw8t44hVukwaR4-105" value="다섯 번째 줄 - 저작권 관련 표시" style="rounded=0;whiteSpace=wrap;html=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="320" y="890" width="190" height="10" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
